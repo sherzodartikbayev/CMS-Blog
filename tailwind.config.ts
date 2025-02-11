@@ -53,7 +53,7 @@ export default {
   		},
 			fontFamily: {
 				creteRound: ['var(--font-creteRound)'],
-				workSans: ['var(--font-workSans)']
+				workSans: ['var(--font-workSans)'],
 			},
   		borderRadius: {
   			lg: 'var(--radius)',

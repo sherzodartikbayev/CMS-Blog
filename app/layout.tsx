@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Crete_Round, Work_Sans } from 'next/font/google'
 import './globals.css'
 import { ChildProps } from '@/types'
+import { ThemeProvider } from '@/components/providers/theme-providers'
 
 const creteRound = Crete_Round({
 	weight: ['400'],
@@ -18,7 +19,7 @@ const workSans = Work_Sans({
 export const metadata: Metadata = {
 	title: 'Sammi dasturlashga oid maqolalar',
 	description:
-		'Dasturlash haqida yangiliklarc, va dasturlash sohasidagi eng so`nggi xabarlar. Bizning blogda dasturlashni o`rganish va rivojlantirish uchun qo`llanma topishingiz mumkin.',
+		'Dasturlash haqida yangiliklar, maslahatlar, va dasturlash sohasidagi eng soʻnggi xabarlar. Bizning blogda dasturlashni oʻrganish va rivojlantirish uchun qoʻllanma topishingiz mumkin.',
 }
 
 export default function RootLayout({ children }: ChildProps) {
@@ -27,7 +28,14 @@ export default function RootLayout({ children }: ChildProps) {
 			<body
 				className={`${creteRound.variable} ${workSans.variable} overflow-x-hidden`}
 			>
-				{children}
+				<ThemeProvider
+					attribute='class'
+					defaultTheme='system'
+					enableSystem
+					disableTransitionOnChange
+				>
+					{children}
+				</ThemeProvider>
 			</body>
 		</html>
 	)
