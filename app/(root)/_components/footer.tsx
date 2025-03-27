@@ -9,7 +9,7 @@ const Footer = () => {
 	const [active, setActive] = useState(false)
 
 	return (
-		<footer className='flex mx-auto w-full py-24 flex-col container max-w-2xl space-y-12'>
+		<footer className='flex mx-auto w-full py-24 px-10 flex-col container max-w-2xl space-y-12'>
 			<h1 className='text-5xl max-md:text-3xl font-creteRound text-center'>
 				Get latest posts delivered right to your inbox
 			</h1>
