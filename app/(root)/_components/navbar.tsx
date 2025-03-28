@@ -34,8 +34,8 @@ const Navbar = () => {
 
 				{/* Search  */}
 				<div className='flex items-center gap-1'>
-					<ModeToggle />
 					<GlobalSearch />
+					<ModeToggle />
 					<Mobile />
 				</div>
 			</div>
