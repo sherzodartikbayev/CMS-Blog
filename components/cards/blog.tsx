@@ -1,12 +1,23 @@
+import { cn } from '@/lib/utils'
 import { IBlog } from '@/types'
 import { CalendarDays, Clock, Dot, Minus } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { Badge } from '../ui/badge'
 
-const BlogCard = (blog: IBlog) => {
+interface Props extends IBlog {
+	isVertical?: boolean
+}
+
+const BlogCard = (blog: Props) => {
 	return (
-		<Link href='/' className='grid gap-4 group grid-cols-1 md:grid-cols-2 max-md:px-10'>
+		<Link
+			href='/'
+			className={cn(
+				'grid gap-4 group',
+				blog.isVertical ? 'grid-col-1' : 'md:grid-cols-2 max-md:px-10'
+			)}
+		>
 			<div className='relative bg-secondary rounded-md'>
 				<Image
 					width={650}
@@ -32,17 +43,15 @@ const BlogCard = (blog: IBlog) => {
 				</div>
 
 				{/* Title */}
-				<h2 className="text-3xl max-md:text-2xl font-creteRound group-hover:text-blue-500 transition-colors">
+				<h2 className='text-3xl max-md:text-2xl font-creteRound group-hover:text-blue-500 transition-colors'>
 					{blog.title}
 				</h2>
-				<p className="text-muted-foreground line-clamp-3">
-					{blog.description}
-				</p>
+				<p className='text-muted-foreground line-clamp-3'>{blog.description}</p>
 
 				{/* Author */}
-				<div className="flex items-center gap-4">
-					<div className="flex items-center gap-2">
-						<Image  
+				<div className='flex items-center gap-4'>
+					<div className='flex items-center gap-2'>
+						<Image
 							src='/author/thomas-macaulay.jpg'
 							alt='author'
 							width={30}
@@ -52,7 +61,7 @@ const BlogCard = (blog: IBlog) => {
 						<p>by {blog.author}</p>
 					</div>
 					<Dot />
-					<div className="flex items-center gap-2">
+					<div className='flex items-center gap-2'>
 						<Badge variant='secondary'>Machine Learning</Badge>
 					</div>
 				</div>
