@@ -10,3 +10,8 @@ export interface IBlog {
   image: string;
   tags: string[];
 }
+
+export interface IAuthor {
+    image: string
+    name: string
+}
