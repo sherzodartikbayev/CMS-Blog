@@ -1,9 +1,11 @@
 import BlogCard from '@/components/cards/blog'
-import { blogs } from '@/constants'
+import { getBlogs } from '@/service/blog.service'
 import { Dot, Home } from 'lucide-react'
 import Link from 'next/link'
 
-const BlogsPage = () => {
+const BlogsPage = async () => {
+	const blogs = await getBlogs()
+
 	return (
 		<div className='max-w-6xl mx-auto max-md:px-10'>
 			<div className='relative min-h-[40vh] flex items-center justify-end flex-col'>
