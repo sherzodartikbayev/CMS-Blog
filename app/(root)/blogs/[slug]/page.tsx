@@ -1,4 +1,3 @@
-import { Button } from '@/components/ui/button'
 import { getReadingTime } from '@/lib/utils'
 import { getDetailedBlog } from '@/service/blog.service'
 import { format } from 'date-fns'
@@ -7,15 +6,11 @@ import {
 	ArrowUpRight,
 	CalendarDays,
 	Clock,
-	Facebook,
-	Link2,
-	Linkedin,
-	Minus,
-	Send,
-	Twitter,
+	Minus
 } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
+import ShareBtns from '../../_components/share-btns'
 
 export async function generateMetaData({ params }: { 
 	params: { slug: string }
@@ -75,23 +70,7 @@ const SlugPage = async ({ params }: { params: { slug: string } }) => {
 				<div className='flex flex-col space-y-3'>
 					<div className='md:ml-4 sticky top-36'>
 						<p className='text-lg uppercase text-muted-foreground'>Share</p>
-						<div className='flex flex-col max-md:flex-row md:space-y-3 max-md:space-x-3 mt-4'>
-							<Button size={'icon'} variant={'outline'}>
-								<Twitter />
-							</Button>
-							<Button size={'icon'} variant={'outline'}>
-								<Facebook />
-							</Button>
-							<Button size={'icon'} variant={'outline'}>
-								<Linkedin />
-							</Button>
-							<Button size={'icon'} variant={'outline'}>
-								<Send />
-							</Button>
-							<Button size={'icon'} variant={'outline'}>
-								<Link2 />
-							</Button>
-						</div>
+						<ShareBtns />
 					</div>
 				</div>
 

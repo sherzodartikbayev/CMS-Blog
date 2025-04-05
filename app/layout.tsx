@@ -4,6 +4,7 @@ import { ChildProps } from '@/types'
 import type { Metadata } from 'next'
 import { Crete_Round, Work_Sans } from 'next/font/google'
 import './globals.css'
+import NextTopLoader from 'nextjs-toploader'
 
 const creteRound = Crete_Round({
 	weight: ['400'],
@@ -52,8 +53,9 @@ function RootLayout({ children }: ChildProps) {
 					disableTransitionOnChange
 					storageKey='blog-theme'
 				>
+					<NextTopLoader showSpinner={false} />
 					{children}
-					<Toaster position='top-center' />
+					<Toaster position='top-right' />
 				</ThemeProvider>
 			</body>
 		</html>
