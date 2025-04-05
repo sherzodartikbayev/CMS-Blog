@@ -12,7 +12,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import ShareBtns from '../../_components/share-btns'
 
-export async function generateMetaData({ params }: { 
+export async function generateMetadata({ params }: { 
 	params: { slug: string }
  }) {
 		const blog = await getDetailedBlog(params.slug)
