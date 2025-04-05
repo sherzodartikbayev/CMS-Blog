@@ -1,7 +1,12 @@
 import CategoriesTagsCard from '@/components/cards/categories-tags'
 import { getCategories } from '@/service/category.service'
 import { Dot, Home } from 'lucide-react'
+import { Metadata } from 'next'
 import Link from 'next/link'
+
+export const metadata: Metadata = {
+	title: 'All Categories'
+}
 
 const Page = async () => {
 	const categories = await getCategories()
@@ -26,7 +31,7 @@ const Page = async () => {
 				</div>
 			</div>
 
-			<div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-24'>
+			<div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-24 gap-4'>
 				{categories.map(item => (
 					<CategoriesTagsCard key={item.slug} type='categories' {...item} />
 				))}

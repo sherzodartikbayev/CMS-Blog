@@ -3,6 +3,19 @@ import { getBlogsByCategory } from '@/service/category.service'
 import { Dot, Home } from 'lucide-react'
 import Link from 'next/link'
 
+export async function generateMetaData({
+	params,
+}: {
+	params: { slug: string }
+}) {
+	const blog = await getBlogsByCategory(params.slug)
+
+	return {
+		title: blog.name,
+		keywords: 'Front End, Back End, Full-Stack, Artificial Intilegence',
+	}
+}
+
 const Page = async ({ params }: { params: { slug: string } }) => {
 	const category = await getBlogsByCategory(params.slug)
 

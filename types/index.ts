@@ -1,11 +1,8 @@
-import { JSX } from 'react'
-
 export interface ChildProps {
 	children: React.ReactNode
 }
 
 export interface IBlog {
-	map(arg0: (blog: any) => JSX.Element): import("react").ReactNode
 	length: ReactNode
 	title: string
 	description: string
@@ -31,4 +28,10 @@ export interface IAuthor {
 export interface ICategoryAndTags {
 	name: string
 	slug: string
+	blogs: IBlog
+}
+
+export interface IArchiveBlogs {
+	year: string
+	blogs: IBlog[]
 }

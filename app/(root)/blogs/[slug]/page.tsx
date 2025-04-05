@@ -17,6 +17,20 @@ import {
 import Image from 'next/image'
 import Link from 'next/link'
 
+export async function generateMetaData({ params }: { 
+	params: { slug: string }
+ }) {
+		const blog = await getDetailedBlog(params.slug)
+
+		return {
+			title: blog.title,
+			description: blog.description,
+			openGraph: {
+				images: blog.image.url
+			}
+		}
+ }
+
 const SlugPage = async ({ params }: { params: { slug: string } }) => {
 	const blog = await getDetailedBlog(params.slug)
 
