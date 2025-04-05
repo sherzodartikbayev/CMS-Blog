@@ -12,14 +12,14 @@ export function getReadingTime(content: string) {
 
 	const regex = /\w/
 
-	let words = content.split(' ').filter(word => {
+	const words = content.split(' ').filter(word => {
 		if (word.includes('<img>')) {
 			images += 1
 		}
 		return regex.test(word)
 	}).length
 
-	let imageAdjust = images * 4
+	const imageAdjust = images * 4
 	let imageSecs = 0
 	let imageFactor = 12
 
