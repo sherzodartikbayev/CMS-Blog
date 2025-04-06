@@ -1,6 +1,6 @@
-![cms-blog](https://github.com/user-attachments/assets/c298bdf4-3476-4196-86fc-990286fe24c8)
-
 <h1 align='center'>CMS Blog Application</h1>
+
+![cms-blog](https://github.com/user-attachments/assets/c298bdf4-3476-4196-86fc-990286fe24c8)
 
 # 🌐 Live Demo
 Check out the live demo: [Blog](https://cms-blog-vert-six.vercel.app/)
