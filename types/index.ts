@@ -3,7 +3,6 @@ export interface ChildProps {
 }
 
 export interface IBlog {
-	length: ReactNode
 	title: string
 	description: string
 	author: IAuthor
@@ -13,6 +12,7 @@ export interface IBlog {
 	createdAt: string
 	content: { html: string }
 	slug: string
+	length: number
 }
 
 export interface IAuthor {
@@ -22,7 +22,7 @@ export interface IAuthor {
 	image: {
 		url: string
 	}
-	blogs: IBlog
+	blogs: IBlog[]
 }
 
 export interface ICategoryAndTags {

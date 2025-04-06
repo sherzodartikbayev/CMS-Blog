@@ -30,7 +30,7 @@ const Page = async ({ params }: { params: { id: string } }) => {
 				<span>Published posts</span>
 			</h2>
 			<div className='flex flex-col space-y-24 mt-24'>
-				{author.blogs.map(blog => (
+				{author.blogs.map((blog) => (
 					<BlogCard key={blog.title} {...blog} />
 				))}
 			</div>

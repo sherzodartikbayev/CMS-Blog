@@ -18,7 +18,7 @@ const AuthorCard = (author: IAuthor) => {
 			</div>
 			<h2 className='text-2xl font-creteRound'>{author.name}</h2>
 			<p className='text-muted-foreground'>
-				<span className='font-bold text-white'>{author.blogs.length}</span>{' '}
+				<span className='font-bold text-white'>{author.blogs.length}</span>
 				Published posts
 			</p>
 		</Link>
