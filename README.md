@@ -1,36 +1,61 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+![cms-blog](https://github.com/user-attachments/assets/c298bdf4-3476-4196-86fc-990286fe24c8)
 
-## Getting Started
+<h1 align='center'>CMS Blog Application</h1>
 
-First, run the development server:
+# 🌐 Live Demo
+Check out the live demo: [Blog](https://cms-blog-vert-six.vercel.app/)
 
+# 🚀 Technologies Used
+- **Next.js**
+- **TypeScript**
+- **Tailwind CSS**
+- **Shadcn-ui**
+- **Hygraph**
+- **GraphQL**
+
+# ✨ Features
+- ✅ Dynamic Blog Posts – All posts are managed dynamically via Hygraph CMS
+- 📝 Rich Content Support – Supports markdown, images, formatted text, and code snippets
+- 🔍 Post Detail Page – Each blog post has a dedicated and well-structured page
+- 📅 Auto-generated Slugs – Clean and SEO-friendly URLs based on post titles
+- 📱 Responsive Design – Fully responsive layout across all screen sizes
+- 🎨 Shadcn UI Integration – Beautiful and modern UI components built-in
+- 🚀 Fast Performance – Optimized with Next.js for blazing-fast load times
+- 🌙 Dark Mode Ready (optional) – Supports light and dark themes for better UX
+- 🔗 SEO Optimized – Includes meta tags and Open Graph support for better visibility
+- 🔐 Secure & Scalable – Uses Hygraph and GraphQL for secure data management
+- ✍️ Easy Content Management – Create and manage content from the CMS with no code required
+
+# 🛠 Installation
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+  # Clone the repository
+  git clone https://github.com/sherzodartikbayev/CMS-Blog.git
+```
+```bash
+  # Install dependencies
+  npm install  
+```
+```bash
+  # Start the development server
+  npm run dev 
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# 📄 Environment Variables
+```bash
+  NEXT_PUBLIC_GRAPHCMS_ENDPOINT=your-graphcms-endpoint
+  NEXT_PUBLIC_TELEGRAM_BOT_API=your-telegram-bot-api-url
+  NEXT_PUBLIC_TELEGRAM_CHAT_ID=your-telegram-chat-id
+  NEXT_PUBLIC_BASE_URL=your-site-url
+```
+# 📸 Screenshots
+![cms-blog-vert-six vercel app_ (1)](https://github.com/user-attachments/assets/a20584d7-9dd9-426d-a2c8-93d5f3c78371)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+# 📬 Contact
+If you have any questions or suggestions, feel free to reach out:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- GitHub: [sherzodartikbayev](https://github.com/sherzodartikbayev)
+- Email: sherzadartikbayev@gmail.com
+- Telegram: [sherzod_artikbayev](https://t.me/sherzod_artikbayev)
+- LinkedIn: [Sherzod Artikbayev](https://www.linkedin.com/in/sherzod3105/)
+- Facebook: [Sherzod Artikbayev](https://www.facebook.com/sherz0dartikbayev)
+- Twitter: [Sherzod Artikbayev](https://x.com/SherzadArt74344)
